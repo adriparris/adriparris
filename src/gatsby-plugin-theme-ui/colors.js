@@ -6,4 +6,10 @@ export default {
   muted: "#f6f6f6",
   highlight: "#FF6DEB",
   more: "#50E8FF",
+  modes: {
+    mypage: {
+      background: "#FF96BC",
+      text: "white",
+    },
+  },
 }
