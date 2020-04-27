@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Menu from "../components/menu/menu"
 import { ThemeProvider, Box } from "theme-ui"
 import { useColorMode } from "theme-ui"
 import { Link } from "gatsby"
@@ -19,7 +18,6 @@ export default () => {
 
   return (
     <Layout>
-      <Menu></Menu>
       <Link to="/another-page">Another page</Link>
 
       <ThemeProvider theme={pageTheme}>
