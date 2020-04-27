@@ -6,7 +6,7 @@ import theme from "../gatsby-plugin-theme-ui"
 
 const pageTheme = {
   ...theme,
-  colors: { ...theme.colors, background: "#FF96BC" },
+  colors: { ...theme.colors, background: "#FF96BC", text: "white" },
 }
 
 export default () => (
