@@ -8,26 +8,45 @@ class Menu extends React.Component {
     return (
       <nav>
         <Flex
-          className="menutype"
           sx={{
             flexDirection: "column",
+            fontSize: "3rem",
+            fontWeight: "800",
+            letterSpacing: "0.4rem",
+            color: "inherit",
+            "&.active": {
+              color: "tomato",
+            },
+            "&.hover": {
+              color: "secondary",
+            },
           }}
         >
-          <Link to="/ui-design" activeStyle={{ color: "colors.primary" }}>
+          <Link
+            to="/ui-design"
+            sx={{
+              color: "inherit",
+              "&.active": {
+                color: "primary",
+              },
+            }}
+          >
             ui design
           </Link>
-          <Link to="/ux-design" activeStyle={{ color: "tomato" }}>
+          <Link
+            to="/ux-design"
+            sx={{
+              color: "inherit",
+              "&.active": {
+                color: "primary",
+              },
+            }}
+          >
             ux design
           </Link>
-          <Link to="/web-dev" activeStyle={{ color: "tomato" }}>
-            web development
-          </Link>
-          <Link to="/illustration" activeStyle={{ color: "tomato" }}>
-            illustration
-          </Link>
-          <Link to="/plane" activeStyle={{ color: "tomato" }}>
-            a plane
-          </Link>
+          <Link to="/web-dev">web development</Link>
+          <Link to="/illustration">illustration</Link>
+          <Link to="/plane">a plane</Link>
         </Flex>
       </nav>
     )

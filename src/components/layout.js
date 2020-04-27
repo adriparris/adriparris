@@ -1,16 +1,25 @@
 import React from "react"
 import "./layout.css"
 import "typeface-muli"
-import { Grid, Flex, Box } from "theme-ui"
+import { Flex, Box } from "theme-ui"
 import Logo from "./logo"
 import Menu from "./menu/menu"
 
 export default ({ children }) => (
-  <Grid columns="2">
-    <Box>
+  <div>
+    <Box sx={{ paddingBottom: ["20px", "40px"] }}>
       <Logo></Logo>
-      <Menu></Menu>
     </Box>
-    <Box>{children}</Box>
-  </Grid>
+
+    <Flex
+      sx={{
+        flexDirection: ["column", "row"],
+      }}
+    >
+      <Box sx={{ paddingRight: ["100px", "0px"] }}>
+        <Menu></Menu>
+      </Box>
+      <Box>{children}</Box>
+    </Flex>
+  </div>
 )
