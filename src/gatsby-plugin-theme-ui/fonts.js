@@ -1,6 +1,6 @@
 export default {
-  body: "system-ui, sans-serif",
-  heading: "Baskerville, Georgia, serif",
+  body: "Muli, sans-serif",
+  heading: "Muli, sans-serif",
   monospace: "Menlo, monospace",
   fontWeights: {
     body: 400,
@@ -12,7 +12,3 @@ export default {
     menu: 0.4,
   },
 }
-
-// fontSize = "3rem"
-// fontWeight = "800"
-// letterSpacing = "0.4rem"

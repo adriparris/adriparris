@@ -1,0 +1,132 @@
+@keyframes poschange {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: -5%;
+  }
+}
+
+@keyframes rightslide {
+  from {
+    left: 40%;
+    opacity: 0;
+  }
+  to {
+    left: 35%;
+    opacity: 100;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.lamp-ani {
+  position: absolute;
+  top: -5%;
+  left: 45%;
+  animation-name: poschange;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.lamp-ani:hover {
+  transform: translate(0px, 10px);
+  -webkit-transform: translate(0px, 10px); /** Chrome & Safari **/
+  -o-transform: translate(0px, 10px); /** Opera **/
+  -moz-transform: translate(0px, 10px); /** Firefox **/
+}
+
+.fade {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.window-ani {
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.plant-1 {
+  position: absolute;
+  bottom: 25%;
+  right: 10%;
+  animation-name: fadein;
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 2s ease-in-out; /** Firefox **/
+  -o-transition: all 2s ease-in-out; /** Opera **/
+}
+
+.plant-:hover {
+  transform: translate(4px, 0);
+  -webkit-transform: translate(4px, 0); /** Chrome & Safari **/
+  -o-transform: translate(4px, 0); /** Opera **/
+  -moz-transform: translate(4px, 0); /** Firefox **/
+}
+.plant-2 {
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 1s ease-in-out; /** Firefox **/
+  -o-transition: all 1s ease-in-out; /** Opera **/
+}
+.plant-2:hover {
+  transform: translate(4px, 0);
+  -webkit-transform: translate(4px, 0); /** Chrome & Safari **/
+  -o-transform: translate(4px, 0); /** Opera **/
+  -moz-transform: translate(4px, 0); /** Firefox **/
+}
+
+.typing-ani {
+  position: absolute;
+  bottom: 15%;
+  left: 35%;
+  animation-name: rightslide;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+}
+.typing-ani:hover {
+  transform: translate(-3px, 0);
+  -webkit-transform: translate(-3px, 0); /** Chrome & Safari **/
+  -o-transform: translate(-3px, 0); /** Opera **/
+  -moz-transform: translate(-3px, 0); /** Firefox **/
+}
+
+.shiftright {
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+
+.shiftright:hover {
+  transform: translate(3px, 0);
+  -webkit-transform: translate(3px, 0); /** Chrome & Safari **/
+  -o-transform: translate(3px, 0); /** Opera **/
+  -moz-transform: translate(3px, 0); /** Firefox **/
+}

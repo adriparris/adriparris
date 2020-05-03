@@ -1,32 +1,43 @@
 import React from "react"
 import Layout from "../components/layout"
-import { ThemeProvider, Box } from "theme-ui"
+import { Box } from "theme-ui"
 import { useColorMode } from "theme-ui"
 import { Link } from "gatsby"
+import LampButton from "../components/animations/lamp"
+// import TypingAnimation from "../components/animations/TypingAnimation"
+import HomeAnimation from "../components/animations/homepage-comp"
 
-const pageTheme = {
-  colors: { text: "red", background: "black" },
-}
-
-export default () => {
+export default props => {
   const [colorMode, setColorMode] = useColorMode()
 
   React.useEffect(() => {
-    setColorMode("mypage")
+    setColorMode("rooibos")
     return () => setColorMode(undefined)
   }, [])
 
   return (
     <Layout>
-      <Link to="/another-page">Another page</Link>
-
-      <ThemeProvider theme={pageTheme}>
-        <Box>
-          <Box bg="background" color="text">
-            Red text on black background because of theme
-          </Box>
-        </Box>
-      </ThemeProvider>
+      <LampButton />
+      <Box>
+        <HomeAnimation />
+      </Box>
     </Layout>
   )
 }
+
+// export default () => {
+//   const [colorMode, setColorMode] = useColorMode()
+
+//   React.useEffect(() => {
+//     setColorMode("rooibos")
+//     return () => setColorMode(undefined)
+//   }, [])
+
+//   return (
+//     <Layout>
+//       <Box>
+//         <HomeAnimation />
+//       </Box>
+//     </Layout>
+//   )
+// }

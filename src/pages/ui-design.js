@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { useColorMode } from "theme-ui"
+import { Box } from "theme-ui"
 
 export default () => {
   const [colorMode, setColorMode] = useColorMode()
